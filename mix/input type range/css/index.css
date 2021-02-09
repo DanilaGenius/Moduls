@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: darkmagenta;
+}
+
+.range {
+    margin: 10px auto;
+    display: block;
+    background-color:rgb(5, 0, 0);
+    border: 1px solid black;
+    border-right: 3px solid black;
+    border-left: 3px solid black;
+    border-radius: 5px;
+    box-shadow: 11px 13px 17px 33px rgba(9, 142, 244, 0.1);
+
+}
+
+.range::-moz-range-thumb{
+    background: rgb(34, 53, 36);
+    border-radius: 0px;
+    border: 0;
+    -moz-appearance: none;
+    appearance: none;
+    height: 100%;
+    width: 5px;
+    cursor: pointer;
+}
+.range::-moz-range-progress{
+    background: rgb(169, 170, 156);
+    border-radius: 2px 0 0 2px;
+    height: 100%;  
+}
+.range::-moz-range-track{
+    background: rgb(245, 219, 219);
+    height: 100%;
+    border-radius: 2px;
+}
