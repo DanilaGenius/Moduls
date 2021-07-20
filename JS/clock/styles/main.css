@@ -1,0 +1,244 @@
+/* num 33b3e3 bdbdbd 161b20 f1f1f1 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/back.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    overflow: hidden;
+    overflow-y: none;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock {
+    max-width: 1200px;
+    min-height: 600px;
+    width: 100%;
+    height: 100vh;
+    background:rgba(129, 113, 160, 0.532);
+}
+
+.clock__header {
+    width: 100%;
+    min-height: 105px;
+    background:#020202;
+    border-bottom: 1px solid #33b3e3;
+}
+
+.clock__content {
+    width: 100%;
+    min-height: 500px;
+    background:#0c0e10;
+}
+
+.header__title {
+    text-align: center;
+    padding: 5px 0;
+    width: 100%;
+    min-height: 30px;
+    color: rgba(235, 65, 65, 0.753);
+}
+
+.header__munu {
+    width: 100%;
+    min-height: 75px;
+    border-top: solid 1px #0d0d0d;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+
+.header__munu-elem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    
+}
+.header__munu-elem-active {
+    border-bottom: solid 3px #33b3e3;
+}
+.header__munu-elem:hover {
+    border-bottom: solid 3px #33b4e373;
+}
+
+.header__munu-elem  {
+    text-align: center;
+    color: #f1f1f1;
+    border-left: solid 1px #0d0d0d;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.header__munu-elem:first-child {
+    border-left: none;
+} 
+
+
+
+/* ----------------------------------------------------------------- */
+
+.clock__content {
+    display: flex;
+    justify-content: center;
+    align-items: center
+    
+}
+.tabClock {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    font-size: 30px;
+}
+.tabClock__quotes {
+    color: #33b3e3;
+    font-size: 50px;
+}
+.tabClock__number {
+    background: #252b30;
+    color: #28a8d6;
+    width: 34px;
+    height: 50px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.tabClock__main {
+    display: flex;
+}
+
+.tabClock__table {
+    text-align: left;
+    width: 100%;
+    margin-top: 15px;
+    list-style-type: none;
+    color: #28a8d6;
+}
+
+.textLeft {
+    text-align: left;
+}
+
+/* ----------------------------------------------------------------- */
+
+.tabStopwatch {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.tabStopwatch__active, .tabStopwatch__note {
+    width: 100%;
+    height: 100%;
+    color:#33b3e3;
+}
+
+.tabStopwatch__active {
+    text-align: center;
+}
+.tabStopwatch__note {
+    padding: 5px 5px 5px 20px;
+    height: 200px;
+    overflow: auto;
+    border: 5px solid #33b4e373;
+    background: rgba(129, 113, 160, 0.532);
+}
+
+.tabStopwatch__time {
+    font-size: 24px;
+    margin: 0 0 16px 0;
+}
+
+.tabStopwatch__btns {
+    display: flex;
+    justify-content: center;
+}
+
+.tabStopwatch__btn {
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #f1f1f1;
+}
+
+.tabStopwatch__table {
+    list-style-type: square;
+}
+
+.tabStopwatch__table-item {
+    margin: 5px 0 5px 0;
+}
+
+.tabTimer {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.tabTimer__table {
+    margin: 0 auto 30px auto;
+}
+.tabTimer__table th {
+    font-size: 12px;
+}
+
+.tabTimer__table-time {
+    border: solid 1px #ffffff;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.tabTimer__table-time-value {
+    border: solid 1px #ffffff;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+
+.tabTimer__btns {
+   
+    min-height: 40px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+.tabTimer__btn {
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #33b3e3;
+    text-align: center;
+    display: inline;
+}

@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100px;
+    margin: 0 auto;
+    padding: 100px;
+    /* border: solid 1px deeppink; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion {
+    width: 100%;
+    max-width: 500px;
+    min-height: 100px;
+    background: crimson;
+    border: solid 7px deeppink;
+}
+
+.accordion__title {
+    width: 100%;
+    min-height: 40px;
+    padding: 12px 5px 0px 10px;
+    background: coral;
+    cursor: pointer;
+}
+
+.accordion__info {
+    width: 100%;
+    min-height: 2px;
+    height: 2px;
+    overflow: hidden;
+    transition: 1s;
+}
