@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    background: rgb(124, 152, 245);
+}
+
+.game {
+    border: 1px solid black;
+    width: 300px;
+    margin: 10px;
+}
+
+.game__cells {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.game__cell {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    background: #9885ec;
+   
+}
+
+.game__move-circle {
+    /* position: absolute; */
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game__move-circle::before {
+    content: "";
+    width: 80px;
+    height: 80px;
+    border: solid 2px black;
+    border-radius: 50%;
+}
+
+.game__move-cross {
+    /* position: absolute; */
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game__move-cross::before {
+    content: "";
+    width: 80px;
+    height: 2px;
+    background: #000;
+    transform: rotate(-45deg);
+    position: absolute;
+}
+
+.game__move-cross::after {
+    content: "";
+    width: 80px;
+    height: 2px;
+    background: #000;
+    transform: rotate(45deg);
+    position: absolute;
+}
+
