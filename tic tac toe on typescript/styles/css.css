@@ -10,9 +10,11 @@ body {
 }
 
 .game {
-    border: 1px solid black;
     width: 300px;
-    margin: 10px;
+    margin: 15px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .game__cells {
@@ -29,11 +31,14 @@ body {
     height: 100px;
     border: 1px solid black;
     background: #9885ec;
-   
+    border-radius: 5px;
+}
+
+.game__cell:hover {
+    border: 2px solid black;
 }
 
 .game__move-circle {
-    /* position: absolute; */
     min-width: 100px;
     min-height: 100px;
     display: flex;
@@ -50,7 +55,6 @@ body {
 }
 
 .game__move-cross {
-    /* position: absolute; */
     min-width: 100px;
     min-height: 100px;
     display: flex;
@@ -74,5 +78,33 @@ body {
     background: #000;
     transform: rotate(45deg);
     position: absolute;
+}
+
+.game__btns {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.game__btn {
+    border: 1px solid rgb(12, 8, 243);
+    background: rgb(252, 240, 240);
+    color: #000000;
+    margin: 10px auto;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.game__state {
+    color: #FFFFFF;
+    font-size: 24px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
 }
 
